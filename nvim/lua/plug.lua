@@ -29,6 +29,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
+Plug ('neoclide/coc.nvim', {branch = 'release'})
+
 -- Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug ('nvim-telescope/telescope.nvim', { tag= '0.1.0' })
@@ -45,8 +47,8 @@ Plug 'mfussenegger/nvim-lint'
 
 
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-omni'
 Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-buffer'
 
