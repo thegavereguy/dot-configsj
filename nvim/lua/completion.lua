@@ -52,21 +52,21 @@ window = {
 
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },
-  --{ name = 'vsnip' }, -- For vsnip users.
   { name = 'luasnip' }, -- For luasnip users.
+	{ name = 'omni' }
 
 }, {
-  { name = 'buffer' },
+  --{ name = 'buffer' },
   { name = 'nvim_lsp_signature_help' }, -- for signature help
 }),
 	formatting = {
 		format = lspkind.cmp_format({
-			maxwidth = 50
-			-- mode = "symbol_text",
-			-- menu = {
-			-- 	nvim_lsp = "[LSP]",
-				-- luasnip = "[LUASNIP]"
-			-- }
+			maxwidth = 50,
+			mode = "symbol_text",
+			menu = {
+				nvim_lsp = "[LSP]",
+			 luasnip = "[LUASNIP]"
+			}
 		})
 	},
 
