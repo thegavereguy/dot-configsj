@@ -43,7 +43,7 @@ end)
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("~/.config/awesome/themes/" .. vars.theme .. "/theme.lua")
 
-require("main.screen-handler").init(beautiful)
+require("main.screen-handler").init()
 -- This is used later as the default terminal and editor to run.
 local terminal = vars.terminal
 local editor = vars.editor
@@ -57,6 +57,7 @@ local editor_cmd = terminal .. " -e " .. editor
 local modkey = vars.modkey
 -- }}}
 
+awful.layout.layouts = layouts
 -- {{{ Menu
 -- Create a launcher widget and a main menu
 local myawesomemenu = {
@@ -73,10 +74,10 @@ local test = {
 
 local mymainmenu = awful.menu({
 	items = {
-		{ "awesome", myawesomemenu, beautiful.awesome_icon },
+		{ "awesome", myawesomemenu },
 		{ "banana", test},
     { "open terminal", terminal }
-  }
+ }
 })
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
@@ -89,10 +90,9 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Tag layout
 -- Table of layouts to cover with awful.layout.inc, order matters.
 
-tag.connect_signal("request::default_layouts", function()
-	require("tools.debug").toast("layouts")
-    awful.layout.append_default_layouts(layouts)
-end)
+--tag.connect_signal("request::default_layouts", function()
+ --   awful.layout.append_default_layouts(layouts)
+--end)
 -- }}}
 
 -- {{{ Wallpaper
@@ -171,7 +171,9 @@ screen.connect_signal("request::desktop_decoration", function(s)
             awful.button({ }, 1, function (c)
                 c:activate { context = "tasklist", action = "toggle_minimization" }
             end),
-            awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end)
+            awful.button({ }, 3, function() awful.menu.client_list { theme = { width = 250 } } end),
+            awful.button({ }, 4, function() awful.client.focus.byidx(-1) end),
+            awful.button({ }, 5, function() awful.client.focus.byidx( 1) end),
         }
     }
 

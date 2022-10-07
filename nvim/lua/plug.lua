@@ -66,5 +66,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'mhartington/formatter.nvim'
 
+-- Latex Plugin
+Plug 'lervag/vimtex'
+
 vim.call('plug#end')
 
