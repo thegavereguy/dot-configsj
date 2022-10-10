@@ -9,6 +9,7 @@
 -- end
 local mason = require('mason')
 local mason_lspconfig = require('mason-lspconfig')
+local coq = require("coq")
 
 mason.setup()
 mason_lspconfig.setup()
@@ -17,15 +18,13 @@ mason_lspconfig.setup_handlers{
 	function (server)
 		local opts = {
 			on_attach = require('lsp.handlers').on_attach,
-			capabilities = require('lsp.handlers').capabilities
+			capabilities = coq.lsp_ensure_capabilities()
 		}
 
 		if server == "sumneko_lua" then
 			local sumneko_opts = require("lsp.settings.sumneko_lua")
 	 		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
 	 	end
-		require('lspconfig')[server].setup(
-			opts
-			)
+		require('lspconfig')[server].setup(opts)
 	end
 }

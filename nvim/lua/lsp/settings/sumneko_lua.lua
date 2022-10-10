@@ -1,6 +1,5 @@
-return {
+local _M = {
 	settings = {
-
 		Lua = {
 			diagnostics = {
 				globals = { "vim" },
@@ -14,3 +13,5 @@ return {
 		},
 	},
 }
+
+return _M

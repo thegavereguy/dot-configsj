@@ -1,7 +1,7 @@
 local M = {}
 
 -- TODO: backfill this to template
-M.setup = function()
+function M.setup()
   local signs = {
     { name = "DiagnosticSignError", text = "" },
     { name = "DiagnosticSignWarn", text = "" },
@@ -42,6 +42,7 @@ M.setup = function()
   vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
     border = nil
   })
+	return 0
 end
 
 local function lsp_highlight_document(client)
@@ -85,20 +86,10 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
-  if client.name == "tsserver" then
-    client.resolved_capabilities.document_formatting = false
-  end
   lsp_keymaps(bufnr)
   lsp_highlight_document(client)
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-if not status_ok then
-  return
-end
-
-M.capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 return M
