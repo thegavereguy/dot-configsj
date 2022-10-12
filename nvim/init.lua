@@ -5,5 +5,6 @@ require('keymaps')
 require('theme')
 require('lsp')
 require('statusline')
+require('snippets.setup')
 
 
