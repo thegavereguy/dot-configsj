@@ -49,6 +49,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-omni'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 -- snippet engine
@@ -70,6 +71,8 @@ Plug 'mhartington/formatter.nvim'
 
 -- Latex Plugin
 Plug 'lervag/vimtex'
+
+Plug 'voldikss/vim-floaterm'
 
 vim.call('plug#end')
 
