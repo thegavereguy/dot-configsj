@@ -3,10 +3,10 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'	--Albero file laterale
-
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	--SH per Nertree
-
 Plug 'ryanoasis/vim-devicons'	--Icone per Nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 Plug 'onsails/lspkind.nvim'
 
 --Temi
@@ -36,6 +36,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
 Plug 'benfowler/telescope-luasnip.nvim'
+
 --debugger protocol
 Plug 'mfussenegger/nvim-dap'
 
@@ -64,7 +65,9 @@ Plug 'f-person/git-blame.nvim'
 Plug 'chrisbra/sudoedit.vim'
 
 --autochiusura parentesi
-Plug 'jiangmiao/auto-pairs'
+-- Plug 'jiangmiao/auto-pairs'
+Plug 'windwp/nvim-autopairs'
+
 
 Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'mhartington/formatter.nvim'

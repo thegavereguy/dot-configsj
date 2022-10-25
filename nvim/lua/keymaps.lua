@@ -37,3 +37,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 keymap("i", "<F12>", "~", opts)
+
+-- Navigate tags
+keymap("n", "tt", ":tabnew ", {noremap = true})
+keymap("n", "tn", ":tabnext<CR>", opts)
+keymap("n", "tp", ":tabprevious<CR>", opts)
+keymap("n", "tc", ":tabclose<CR>", opts)
+
+
+keymap("n", "N", ":NERDTreeToggle<CR>", opts)
