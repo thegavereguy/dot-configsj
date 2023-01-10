@@ -15,6 +15,7 @@ Plug 'onsails/lspkind.nvim'
 -- Plug 'jacoborus/tender.vim'
 -- Plug 'glepnir/oceanic-material'
 Plug 'ntk148v/vim-horizon'
+Plug 'nyoom-engineering/oxocarbon.nvim'
 -- Plug ('sonph/onehalf', { rtp =  'vim' })
 
 -- Status line
@@ -39,6 +40,9 @@ Plug 'benfowler/telescope-luasnip.nvim'
 
 --debugger protocol
 Plug 'mfussenegger/nvim-dap'
+
+--ui debugger
+Plug 'rcarriga/nvim-dap-ui'
 
 --linter
 Plug 'jose-elias-alvarez/null-ls.nvim'
