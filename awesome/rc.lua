@@ -23,6 +23,8 @@ layouts = require("main.layouts")()
 
 local vars = require("main.user-variables")
 
+local debugger = require("tools.debug")
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -122,6 +124,11 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
+local graph = wibox.widget{
+								max_value = 29,
+								widget = wibox.widget.graph
+							}
+
 
 screen.connect_signal("request::desktop_decoration", function(s)
 
@@ -176,7 +183,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
             awful.button({ }, 5, function() awful.client.focus.byidx( 1) end),
         }
     }
-
     -- Create the wibox
     s.mywibox = awful.wibar {
         position = "top",
@@ -189,23 +195,36 @@ screen.connect_signal("request::desktop_decoration", function(s)
                 s.mytaglist,
                 s.mypromptbox,
             },
-            s.mytasklist, -- Middle widget
+						-- graph,
+						require('plugin.battery-widget'){adapter = "BAT0"},
+            -- s.mytasklist, -- Middle widget
             { -- Right widgets
                 layout = wibox.layout.fixed.horizontal,
-                mykeyboardlayout,
+               -- mykeyboardlayout,
                 wibox.widget.systray(),
                 mytextclock,
                 s.mylayoutbox,
-            },
+				    },
         }
     }
+		s.bottom_bar = awful.wibar {
+			position = "bottom",
+			screen = s,
+			widget = {
+				layout = wibox.layout.align.horizontal,
+				nil,
+				s.mytasklist,
+			}
+		}
 end)
 
 -- }}}
 
 -- {{{ Mouse bindings
 awful.mouse.append_global_mousebindings({
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    --awful.button({ }, 3, function () mymainmenu:toggle() end),
+
+    awful.button({ }, 3, function () graph.add_value(2) end),
     awful.button({ }, 4, awful.tag.viewprev),
     awful.button({ }, 5, awful.tag.viewnext),
 })
@@ -383,6 +402,34 @@ awful.keyboard.append_global_keybindings({
         end,
     }
 })
+
+awful.keyboard.append_global_keybindings({
+	awful.key({}, "XF86MonBrightnessUp",
+		function()
+			os.execute("brightnessctl -d intel_backlight set +10%")
+		end, {description = "+5", group = "hotkeys"}),
+
+		awful.key({}, "XF86MonBrightnessDown",
+		function()
+			os.execute("brightnessctl -d intel_backlight set 10%-")
+		end, {description = "+5", group = "hotkeys"}),
+
+		awful.key({}, "XF86AudioRaiseVolume",
+		function()
+			os.execute("amixer set Master 5%+")
+		end, {description = "volume up", group = "hotkeys"}),
+
+		awful.key({}, "XF86AudioLowerVolume",
+		function()
+			os.execute("amixer set Master 5%-")
+		end, {description = "volume down", group = "hotkeys"}),
+
+		awful.key({}, "XF86AudioMute",
+		function()
+			os.execute("amixer -q set Master toggle")
+		end, {description = "toggle mute", group = "hotkeys"}),
+})
+
 
 client.connect_signal("request::default_mousebindings", function()
     awful.mouse.append_client_mousebindings({
