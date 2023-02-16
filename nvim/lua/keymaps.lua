@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -45,4 +43,4 @@ keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
 
-keymap("n", "N", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)

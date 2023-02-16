@@ -14,6 +14,13 @@ local keymap = vim.api.nvim_set_keymap
 --   command_mode = "c",
 
 -- Normal --
--- Better window navigation
-keymap("n", "X", ":FloatermNew --autoclose=0 g++ % -o %< && ./%< <CR>",opts)
+keymap("n", "X", ":FloatermNew --autoclose=0 g++ -g % -o %< && ./%< <CR>",opts)
+keymap("n", "<F7>", ":lua require('dapui').toggle()<CR>", opts)
+-- keymap("n", "<F8>", ":lua require('dapui').close()<CR>", opts)
+
+keymap("n", "<F5>", ":lua require('dap').toggle_breakpoint()<CR>", opts)
+keymap("n", "<F6>", ":lua require('dap').continue()<CR>", opts)
+keymap("n", "<F11>", ":lua require('dap').step_over()<CR>", opts)
+keymap("n", "<F10>", ":lua require('dap').step_into()<CR>", opts)
+
 

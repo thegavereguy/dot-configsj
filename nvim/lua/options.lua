@@ -21,4 +21,5 @@ Options.signcolumn = "yes"
 Options.wrap = false
 Options.scrolloff = 10				-- numero minimo di righe sotto/sopra al documento visualizzato prima di scrollare
 Options.sidescrolloff = 10		-- stessa roba ma orizzontale
+Options.foldcolumn = 'auto'   -- imposta la colonna per visualizzare le ripiegature
 

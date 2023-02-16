@@ -24,11 +24,14 @@ Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
---LS
+--format
+Plug 'lukas-reineke/indent-blankline.nvim'
 
+--LS
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'j-hui/fidget.nvim'  --lsp progress
 
 -- Telescope
 Plug 'nvim-lua/plenary.nvim'
@@ -49,6 +52,7 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'mfussenegger/nvim-lint'
 
 
+--completion 
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-vsnip'
@@ -56,6 +60,7 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-omni'
 Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'folke/neodev.nvim'
 
 -- snippet engine
 Plug 'L3MON4D3/LuaSnip'
