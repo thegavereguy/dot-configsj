@@ -5,7 +5,7 @@ local has_words_before = function()
 end
 
 -- Setup nvim-cmp.
-local cmp = require'cmp'
+local cmp = require('cmp')
 local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 
@@ -27,25 +27,26 @@ cmp.setup({
 
 		["<Tab>"] = cmp.mapping(function(fallback) 			-- navigazione campi  snippet
 			if luasnip.expand_or_locally_jumpable() then
-     	   luasnip.expand_or_jump()
-     	 elseif has_words_before() then 			-- togliere questo se da fastitidio mettere TAB dopo un testo
-     	   cmp.complete()
-     	 else
-     	   fallback()
-     	 end
+     	  luasnip.expand_or_jump()
+     	elseif has_words_before() then 			-- togliere questo se da fastitidio mettere TAB dopo un testo
+     		cmp.complete()
+      else
+     	 	fallback()
+     	end
     end, { "i", "s" }),
 
 		["<S-Tab>"] = cmp.mapping(function(fallback) 		-- stessa roba ma al contrario
-   	 if luasnip.jumpable(-1) then
-   	   luasnip.jump(-1)
-   	 else
-   	   fallback()
-   	 end
+   	 	if luasnip.jumpable(-1) then
+   	 	  luasnip.jump(-1)
+   	 	else
+   	 	  fallback()
+   	 	end
    	end, { "i", "s" }),
     }),
-window = {
-	 completion = cmp.config.window.bordered(),
-	 documentation = cmp.config.window.bordered(),
+
+	window = {
+		completion = cmp.config.window.bordered(),
+	 	documentation = cmp.config.window.bordered(),
 },
 
 sources = cmp.config.sources({
@@ -77,21 +78,12 @@ sources = {
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline(':', {
-sources = cmp.config.sources({
-  { name = 'path' }
-}, {
-  { name = 'cmdline' }
+	sources = cmp.config.sources({
+ 	 { name = 'path' }
+	}, {
+  	{ name = 'cmdline' }
+	})
 })
-})
-
---local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
- -- require('lspconfig')['sumneko_lua'].setup {
-  --  capabilities = capabilities,
-	--	settings= require("lsp.settings.sumneko_lua")
-  --}
-
- -- require('lspconfig')['clangd'].setup{}
 
 end
 

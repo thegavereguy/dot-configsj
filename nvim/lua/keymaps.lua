@@ -43,4 +43,4 @@ keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
 
-keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<C-N>", ":NERDTreeToggle<CR>", opts)

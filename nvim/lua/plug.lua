@@ -32,6 +32,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'j-hui/fidget.nvim'  --lsp progress
+Plug 'glepnir/lspsaga.nvim'
 
 -- Telescope
 Plug 'nvim-lua/plenary.nvim'
@@ -61,6 +62,8 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-omni'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'folke/neodev.nvim'
+
+Plug 'lewis6991/hover.nvim'
 
 -- snippet engine
 Plug 'L3MON4D3/LuaSnip'

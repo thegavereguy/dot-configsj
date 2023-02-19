@@ -21,3 +21,4 @@ Command('hi CmpItemKindKeyword guibg=NONE guifg=#D4D4D4')			-- colore tipo parol
 Command('hi CmpItemKindProperty guibg=NONE guifg=#D4D4D4')			--colore tipo proprietà
 Command('hi CmpItemKindUnit guibg=NONE guifg=#D4D4D4')			-- colore tipo unità
 
+Command('hi FloatBorder guifg=#ffffff')
