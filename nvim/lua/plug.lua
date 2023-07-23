@@ -26,6 +26,10 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 --format
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'Chiel92/vim-autoformat'
+Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'mhartington/formatter.nvim'
+
 
 --LS
 Plug 'neovim/nvim-lspconfig'
@@ -53,7 +57,7 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'mfussenegger/nvim-lint'
 
 
---completion 
+--completion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-vsnip'
@@ -62,14 +66,14 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-omni'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'folke/neodev.nvim'
-
-Plug 'lewis6991/hover.nvim'
+Plug 'saecki/crates.nvim'
 
 -- snippet engine
 Plug 'L3MON4D3/LuaSnip'
 Plug 'iurimateus/luasnip-latex-snippets.nvim'
 Plug 'rafamadriz/friendly-snippets'
 
+-- Git
 Plug 'kdheepak/lazygit.nvim'
 Plug 'f-person/git-blame.nvim'
 
@@ -81,11 +85,10 @@ Plug 'chrisbra/sudoedit.vim'
 Plug 'windwp/nvim-autopairs'
 
 
-Plug 'lukas-reineke/lsp-format.nvim'
-Plug 'mhartington/formatter.nvim'
-
 -- Latex Plugin
 Plug 'lervag/vimtex'
+Plug 'jakewvincent/texmagic.nvim'
+
 
 Plug 'voldikss/vim-floaterm'
 

@@ -5,8 +5,7 @@ require("lspsaga").setup{
 		theme = "round",
 		title = true,
 		border = "rounded",
-
-		winblend = 1
+		winblend = 0
 	},
 	lightbulb = {
 		enable = false,

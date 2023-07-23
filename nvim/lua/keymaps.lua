@@ -2,9 +2,10 @@ local opts = { noremap = true, silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
-
+local autocommand = vim.api.nvim_create_autocmd
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -33,6 +34,12 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Format
+autocommand({"BufWrite"},{
+	command = ":Autoformat",
+})
+
+
 -- Insert --
 keymap("i", "<F12>", "~", opts)
 
@@ -42,5 +49,5 @@ keymap("n", "tn", ":tabnext<CR>", opts)
 keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
-
+--NerdTREE
 keymap("n", "<C-N>", ":NERDTreeToggle<CR>", opts)
