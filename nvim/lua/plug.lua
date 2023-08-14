@@ -14,7 +14,8 @@ Plug 'onsails/lspkind.nvim'
 -- Plug 'morhetz/gruvbox'
 -- Plug 'jacoborus/tender.vim'
 -- Plug 'glepnir/oceanic-material'
-Plug 'ntk148v/vim-horizon'
+--Plug 'ntk148v/vim-horizon'
+Plug '"lunarvim/horizon.nvim'
 Plug 'nyoom-engineering/oxocarbon.nvim'
 -- Plug ('sonph/onehalf', { rtp =  'vim' })
 
@@ -28,14 +29,13 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'lukas-reineke/lsp-format.nvim'
-Plug 'mhartington/formatter.nvim'
 
 
 --LS
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
-Plug 'j-hui/fidget.nvim'  --lsp progress
+Plug ('j-hui/fidget.nvim', {tag="legacy"})--lsp progress
 Plug 'glepnir/lspsaga.nvim'
 
 -- Telescope
