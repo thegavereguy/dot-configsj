@@ -5,25 +5,10 @@
 									// "width": 1280, // Waybar width
 		"spacing": 4, // Gaps between modules (4px)
 									// Choose the order of the modules
-		"modules-left": ["hyprland/workspaces", "hyprland/window"],
-		"modules-center": ["mpris"],
-		"modules-right": [ "pulseaudio", "network", "network#vpn", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "clock", "tray"],
-		// Modules configuration
-		// "sway/workspaces": {
-		//     "disable-scroll": true,
-		//     "all-outputs": truei
-		//     "format": "{name}: {icon}",
-		//     "format-icons": {
-		//         "1": "",
-		//         "2": "",
-		//         "3": "",
-		//         "4": "",
-		//         "5": "",
-		//         "urgent": "",
-		//         "focused": "",
-		//         "default": ""
-		//     }
-		// },
+		"modules-left": ["hyprland/workspaces", "cava"],
+		"modules-center": [ "mpris"],
+		"modules-right": [ "pulseaudio", "network", "network#vpn", "cpu", "battery", "clock", "tray"],
+
 		"keyboard-state": {
 			"numlock": true,
 			"capslock": true,
@@ -78,7 +63,7 @@
 		},
 		"network": {
 			"interface": "wlp5*", // (Optional) To force the use of this interface
-			"format-wifi": "{essid} ({signalStrength}%) ",
+			"format-wifi": "{essid} ",
 			"format-ethernet": "{ipaddr}/{cidr} ",
 			"tooltip-format": "{ifname} via {gwaddr} ",
 			"format-linked": "{ifname} (No IP) ",
@@ -86,10 +71,10 @@
 			"format-alt": "{ifname}: {ipaddr}/{cidr}"
 		},
 		"network#vpn": {
-			"interface": "airvpn", // (Optional) To force the use of this interface
-			"format-ethernet": "vpn {ipaddr} ",
+			"interface": "airvpn*", // (Optional) To force the use of this interface
+			"format-ethernet": "AirVPN Conn. ",
 			"format-linked": "{ifname} (No IP) ",
-			"format-disconnected": "Vpn Disconnected ⚠",
+			"format-disconnected": "No Vpn ⚠",
 			"format-alt": "{ifname}: {ipaddr}/{cidr}"
 		},
 
@@ -118,16 +103,19 @@
 			"player-icons": {
 				"default": "▶",
 				"tidal-hifi" : "🎵",
-				"mpv": "🎵"
+				"mpv": "🎵",
+				"strawberry": "󱁂 "
 			},
 			"status-icons": {
 				"paused": "",
 			},
-			"interval": 1
+			"interval": 1,
+			"dynamic-importance-order": ["title", "artist", "position", "length", "album"],
+			"dynamic-len": 65,
 		},
 		"image#album-art":{
 			"exec": "~/.config/waybar/cover.sh",
-			"size": 32,
+			"size": 30,
 			"interval": 1,
 		},
 		"custom/media": {
@@ -141,6 +129,29 @@
 			"escape": true,
 			"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
 																																 // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-		}
+		},
+		"hyprland/workspaces": {
+			"format": "{name}: {icon}",
+			"format-icons": {
+				"1": "",
+				"2": "",
+				"3": "",
+				"4": "",
+				"5": "",
+				"active": "",
+				"default": ""
+			},
+			"persistent_workspaces": {
+				"*": 5, // 5 workspaces by default on every monitor
+				"HDMI-A-1": 3 // but only three on HDMI-A-1
+			}
+		},
+		"cava": {
+			"cava_config": "/home/enrico/.config/cava/config",
+			"framerate": 60,
+			"bars": 17,
+			"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+
+		},
 }
 
