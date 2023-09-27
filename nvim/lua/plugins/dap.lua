@@ -25,7 +25,6 @@ dap.configurations.cpp = {
   },
 }
 
-
 dapui.setup({
   layouts = { {
     elements = { {
@@ -47,6 +46,6 @@ dapui.setup({
       size = 1
     } },
     position = "bottom",
-    size = 10
+    size = 20
   } },
 })

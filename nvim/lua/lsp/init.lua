@@ -3,9 +3,12 @@
 	-- return
 -- end
 
-require("neodev").setup({
-  library = { plugins = { "nvim-dap-ui", "indent_blankline" }, types = true },
-})
+-- require("neodev").setup({
+  -- library = { plugins = {
+		-- "nvim-dap-ui",
+		-- "indent_blankline"
+	-- }, types = true },
+-- })
 
 require("lsp.mason")
 require("lsp.handlers").setup()
