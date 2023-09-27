@@ -35,8 +35,8 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Format
-autocommand({"BufWrite"},{
-	command = ":Autoformat",
+autocommand({ "BufWrite" }, {
+	command = ":Format",
 })
 
 
@@ -44,10 +44,25 @@ autocommand({"BufWrite"},{
 keymap("i", "<F12>", "~", opts)
 
 -- Navigate tags
-keymap("n", "tt", ":tabnew ", {noremap = true})
+keymap("n", "tt", ":tabnew ", { noremap = true })
 keymap("n", "tn", ":tabnext<CR>", opts)
 keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
 --NerdTREE
 keymap("n", "<C-N>", ":NERDTreeToggle<CR>", opts)
+
+--LspSaga
+keymap("n", "rn", ":Lspsaga rename<CR>", opts)
+--keymap("n", "gd", ":Lspsaga goto_definition")
+keymap("n", "gi", ":Lspsaga finder<CR>", opts)
+keymap("n", "ca", ":Lspsaga code_action<CR>", opts)
+keymap("n", "gd", ":Lspsaga peek_definition<CR>", opts)
+keymap("n", "gD", ":Lspsaga peek_type_definition<CR>", opts)
+keymap("n", "<leader>gd", ":Lspsaga goto_definition<CR>", opts)
+keymap("n", "<leader>gD", ":Lspsaga goto_type_definition<CR>", opts)
+keymap("n", "<leader>sb", ":Lspsaga show_buf_diagnostics<CR>", opts)
+keymap("n", "<leader>sw", ":Lspsaga show_workspace_diagnostics<CR>", opts)
+keymap("n", "K", ":Lspsaga hover_doc<CR>", opts)
+keymap("n", "<leader>o", ":Lspsaga outline<CR>", opts)
+keymap("n", "<A-d>", ":Lspsaga term_toggle<CR>", opts)

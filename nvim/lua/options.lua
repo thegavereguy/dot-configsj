@@ -30,3 +30,5 @@ Options.foldcolumn = 'auto'   -- imposta la colonna per visualizzare le ripiegat
 global.formatdef_rustfmt = '"rustfmt"'
 global.formatters_rust = {'rustfmt'}
 global.rust_raccomended_style = 0;
+
+-- JS
