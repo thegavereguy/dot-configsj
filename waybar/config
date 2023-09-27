@@ -63,12 +63,13 @@
 		},
 		"network": {
 			"interface": "wlp5*", // (Optional) To force the use of this interface
-			"format-wifi": "{essid} ",
+			"format-wifi": "{essid}    | D: {bandwidthDownBits} U: {bandwidthUpBits} ",
 			"format-ethernet": "{ipaddr}/{cidr} ",
 			"tooltip-format": "{ifname} via {gwaddr} ",
 			"format-linked": "{ifname} (No IP) ",
 			"format-disconnected": "Disconnected ⚠",
-			"format-alt": "{ifname}: {ipaddr}/{cidr}"
+			"format-alt": "{ifname}: {ipaddr}/{cidr}",
+			"interval" : 3
 		},
 		"network#vpn": {
 			"interface": "airvpn*", // (Optional) To force the use of this interface

@@ -1097,3 +1097,95 @@ btop++ needs an interactive shell to run.
 2023/08/14 (18:09:58) | ===> btop++ v.1.2.13
 2023/08/14 (18:09:58) | INFO: Logger set to INFO
 2023/08/14 (18:09:58) | INFO: Running on /dev/pts/1
+
+2023/08/16 (14:02:47) | ===> btop++ v.1.2.13
+2023/08/16 (14:02:47) | INFO: Logger set to INFO
+2023/08/16 (14:02:47) | INFO: Running on /dev/pts/1
+
+2023/08/16 (14:14:07) | ===> btop++ v.1.2.13
+2023/08/16 (14:14:07) | INFO: Logger set to INFO
+2023/08/16 (14:14:07) | INFO: Running on /dev/pts/1
+
+2023/08/16 (14:58:20) | ===> btop++ v.1.2.13
+2023/08/16 (14:58:20) | INFO: Logger set to INFO
+2023/08/16 (14:58:20) | INFO: Running on /dev/pts/2
+
+2023/08/16 (15:21:51) | ===> btop++ v.1.2.13
+2023/08/16 (15:21:51) | INFO: Logger set to INFO
+2023/08/16 (15:21:51) | INFO: Running on /dev/pts/1
+
+2023/08/16 (16:52:48) | ===> btop++ v.1.2.13
+2023/08/16 (16:52:48) | INFO: Logger set to INFO
+2023/08/16 (16:52:48) | INFO: Running on /dev/pts/3
+
+2023/08/18 (14:34:45) | ===> btop++ v.1.2.13
+2023/08/18 (14:34:45) | INFO: Logger set to INFO
+2023/08/18 (14:34:45) | INFO: Running on /dev/pts/0
+
+2023/08/20 (10:54:51) | ===> btop++ v.1.2.13
+2023/08/20 (10:54:51) | INFO: Logger set to INFO
+2023/08/20 (10:54:51) | INFO: Running on /dev/pts/0
+
+2023/08/25 (15:09:08) | ===> btop++ v.1.2.13
+2023/08/25 (15:09:08) | INFO: Logger set to INFO
+2023/08/25 (15:09:08) | INFO: Running on /dev/pts/0
+
+2023/08/31 (11:20:50) | ===> btop++ v.1.2.13
+2023/08/31 (11:20:50) | INFO: Logger set to INFO
+2023/08/31 (11:20:50) | INFO: Running on /dev/pts/0
+2023/08/31 (11:21:24) | INFO: Quitting! Runtime: 00:00:34
+
+2023/09/03 (10:28:53) | ===> btop++ v.1.2.13
+2023/09/03 (10:28:53) | INFO: Logger set to INFO
+2023/09/03 (10:28:53) | INFO: Running on /dev/pts/3
+
+2023/09/03 (10:31:27) | ===> btop++ v.1.2.13
+2023/09/03 (10:31:27) | INFO: Logger set to INFO
+2023/09/03 (10:31:27) | INFO: Running on /dev/pts/3
+
+2023/09/03 (10:34:24) | ===> btop++ v.1.2.13
+2023/09/03 (10:34:24) | INFO: Logger set to INFO
+2023/09/03 (10:34:24) | INFO: Running on /dev/pts/0
+
+2023/09/03 (16:42:05) | ===> btop++ v.1.2.13
+2023/09/03 (16:42:05) | INFO: Logger set to INFO
+2023/09/03 (16:42:05) | INFO: Running on /dev/pts/0
+
+2023/09/05 (23:43:27) | ===> btop++ v.1.2.13
+2023/09/05 (23:43:27) | INFO: Logger set to INFO
+2023/09/05 (23:43:27) | INFO: Running on /dev/pts/2
+
+2023/09/08 (23:30:50) | ===> btop++ v.1.2.13
+2023/09/08 (23:30:50) | INFO: Logger set to INFO
+2023/09/08 (23:30:50) | INFO: Running on /dev/pts/0
+
+2023/09/09 (11:57:33) | ===> btop++ v.1.2.13
+2023/09/09 (11:57:33) | INFO: Logger set to INFO
+2023/09/09 (11:57:33) | INFO: Running on /dev/pts/0
+
+2023/09/10 (07:00:26) | ===> btop++ v.1.2.13
+2023/09/10 (07:00:26) | INFO: Logger set to INFO
+2023/09/10 (07:00:26) | INFO: Running on /dev/pts/2
+
+2023/09/10 (07:47:29) | ===> btop++ v.1.2.13
+2023/09/10 (07:47:29) | INFO: Logger set to INFO
+2023/09/10 (07:47:29) | INFO: Running on /dev/pts/2
+2023/09/10 (14:34:44) | INFO: Quitting! Runtime: 06:47:15
+
+2023/09/14 (11:02:09) | ===> btop++ v.1.2.13
+2023/09/14 (11:02:09) | INFO: Logger set to INFO
+2023/09/14 (11:02:09) | INFO: Running on /dev/pts/1
+2023/09/14 (11:03:28) | INFO: Quitting! Runtime: 00:01:19
+
+2023/09/15 (22:32:46) | ===> btop++ v.1.2.13
+2023/09/15 (22:32:46) | INFO: Logger set to INFO
+2023/09/15 (22:32:46) | INFO: Running on /dev/pts/1
+
+2023/09/15 (22:34:39) | ===> btop++ v.1.2.13
+2023/09/15 (22:34:39) | INFO: Logger set to INFO
+2023/09/15 (22:34:39) | INFO: Running on /dev/pts/1
+
+2023/09/20 (11:35:07) | ===> btop++ v.1.2.13
+2023/09/20 (11:35:07) | INFO: Logger set to INFO
+2023/09/20 (11:35:07) | INFO: Running on /dev/pts/4
+2023/09/20 (16:11:37) | INFO: Quitting! Runtime: 04:36:30
