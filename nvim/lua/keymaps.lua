@@ -41,6 +41,9 @@ keymap("n", "TT", ":Telescope<CR>", opts)
 -- Format
 autocommand({"BufWritePost"}, {command = ":FormatWrite"})
 
+-- Lazygit
+keymap("n", "<leader>g", ":LazyGit<CR>", opts)
+
 -- Insert --
 keymap("i", "<F12>", "~", opts)
 
