@@ -6,12 +6,9 @@ require("plugins.dap")
 require("plugins.fidget")
 require("plugins.lspsaga")
 require("plugins.latex")
---require("plugins.hover")
+require("plugins.formatter")
+-- require("plugins.hover")
 
-require("nvim-treesitter.configs").setup {
-	highlight = {
-		enable = true,
-	},
-}
+require("nvim-treesitter.configs").setup {highlight = {enable = true}}
 
 require("crates").setup();

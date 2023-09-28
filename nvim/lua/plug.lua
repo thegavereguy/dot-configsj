@@ -27,7 +27,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 --format
 Plug 'lukas-reineke/indent-blankline.nvim'
 -- Plug 'Chiel92/vim-autoformat'
-Plug 'lukas-reineke/lsp-format.nvim'
+-- Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'mhartington/formatter.nvim'
+
 
 
 --LS

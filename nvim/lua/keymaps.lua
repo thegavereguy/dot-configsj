@@ -1,9 +1,9 @@
-local opts = { noremap = true, silent = true }
+local opts = {noremap = true, silent = true}
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 local autocommand = vim.api.nvim_create_autocmd
---Remap space as leader key
+-- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 
 vim.g.mapleader = " "
@@ -34,27 +34,28 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Format
-autocommand({ "BufWrite" }, {
-	command = ":Format",
-})
+-- Telescope
+keymap("n", "Tb", ":Telescope buffers<CR>", opts)
+keymap("n", "TT", ":Telescope<CR>", opts)
 
+-- Format
+autocommand({"BufWritePost"}, {command = ":FormatWrite"})
 
 -- Insert --
 keymap("i", "<F12>", "~", opts)
 
 -- Navigate tags
-keymap("n", "tt", ":tabnew ", { noremap = true })
+keymap("n", "tt", ":tabnew ", {noremap = true})
 keymap("n", "tn", ":tabnext<CR>", opts)
 keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
---NerdTREE
+-- NerdTREE
 keymap("n", "<C-N>", ":NERDTreeToggle<CR>", opts)
 
---LspSaga
+-- LspSaga
 keymap("n", "rn", ":Lspsaga rename<CR>", opts)
---keymap("n", "gd", ":Lspsaga goto_definition")
+-- keymap("n", "gd", ":Lspsaga goto_definition")
 keymap("n", "gi", ":Lspsaga finder<CR>", opts)
 keymap("n", "ca", ":Lspsaga code_action<CR>", opts)
 keymap("n", "gd", ":Lspsaga peek_definition<CR>", opts)
