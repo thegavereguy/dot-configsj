@@ -94,4 +94,6 @@ Plug 'jakewvincent/texmagic.nvim'
 
 Plug 'voldikss/vim-floaterm'
 
+Plug 'simrat39/rust-tools.nvim'
+
 vim.call('plug#end')

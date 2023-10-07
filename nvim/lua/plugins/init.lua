@@ -12,3 +12,4 @@ require("plugins.formatter")
 require("nvim-treesitter.configs").setup {highlight = {enable = true}}
 
 require("crates").setup();
+require("rust-tools").setup();

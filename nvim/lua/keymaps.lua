@@ -44,6 +44,9 @@ autocommand({"BufWritePost"}, {command = ":FormatWrite"})
 -- Lazygit
 keymap("n", "<leader>g", ":LazyGit<CR>", opts)
 
+-- Folding
+-- autocommand({"BufReadPost", "FileReadPost"}, {command = "zR"})
+
 -- Insert --
 keymap("i", "<F12>", "~", opts)
 

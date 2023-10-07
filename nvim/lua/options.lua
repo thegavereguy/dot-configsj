@@ -1,5 +1,5 @@
 local Options = vim.opt
-local global = vim.g		--global variables
+local global = vim.g -- global variables
 
 Options.number = true
 Options.modifiable = true
@@ -11,7 +11,7 @@ Options.shiftwidth = 2
 Options.cmdheight = 1
 Options.updatetime = 300
 Options.completeopt = {'menuone', 'preview', 'noinsert', 'noselect'}
-Options.showmode = false			-- nascone la modalita dalla barra
+Options.showmode = false -- nascone la modalita dalla barra
 Options.termguicolors = true
 Options.pumheight = 15
 Options.smartindent = true
@@ -20,10 +20,12 @@ Options.undofile = true
 Options.cursorline = true
 Options.signcolumn = "yes"
 Options.wrap = false
-Options.scrolloff = 10				-- numero minimo di righe sotto/sopra al documento visualizzato prima di scrollare
-Options.sidescrolloff = 10		-- stessa roba ma orizzontale
-Options.foldcolumn = 'auto'   -- imposta la colonna per visualizzare le ripiegature
+Options.scrolloff = 10 -- numero minimo di righe sotto/sopra al documento visualizzato prima di scrollare
+Options.sidescrolloff = 10 -- stessa roba ma orizzontale
+Options.foldcolumn = 'auto' -- imposta la colonna per visualizzare le ripiegature
 
+Options.foldmethod = "expr"
+Options.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Formatters options
 -- Rust
