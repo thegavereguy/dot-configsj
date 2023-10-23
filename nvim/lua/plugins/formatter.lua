@@ -23,7 +23,8 @@ require("formatter").setup {
         },
         javascript = {require("formatter.filetypes.javascript").prettierd},
         css = {require("formatter.filetypes.css").prettierd},
-        lua = {require("formatter.filetypes.lua").luaformat}
+        lua = {require("formatter.filetypes.lua").luaformat},
+        rust = {require("formatter.filetypes.rust").rustfmt}
 
     }
 }

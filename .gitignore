@@ -182,3 +182,7 @@ QtProject.conf
 *.log
 
 lazygit/state.yml
+
+MongoDB Compass/
+
+btop/
