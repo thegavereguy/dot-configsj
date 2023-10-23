@@ -8,6 +8,7 @@ require("plugins.lspsaga")
 require("plugins.latex")
 require("plugins.formatter")
 -- require("plugins.hover")
+require("plugins.dressing")
 
 require("nvim-treesitter.configs").setup {
     auto_install = true,

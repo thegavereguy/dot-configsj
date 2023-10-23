@@ -45,6 +45,9 @@ Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
 Plug 'benfowler/telescope-luasnip.nvim'
 
+-- Ui customization
+Plug 'stevearc/dressing.nvim'
+
 -- debugger protocol
 Plug 'mfussenegger/nvim-dap'
 
