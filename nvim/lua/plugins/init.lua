@@ -9,6 +9,7 @@ require("plugins.latex")
 require("plugins.formatter")
 -- require("plugins.hover")
 require("plugins.dressing")
+require("plugins.telescope")
 
 require("nvim-treesitter.configs").setup {
     auto_install = true,
@@ -34,3 +35,4 @@ require("rust-tools").setup({
     tools = {executor = require("rust-tools.executors").floaterm}
 });
 require("toggleterm").setup();
+

@@ -99,5 +99,6 @@ Plug 'simrat39/rust-tools.nvim'
 
 -- Arduino
 Plug 'stevearc/vim-arduino'
+Plug 'edKotinsky/Arduino.nvim'
 
 vim.call('plug#end')

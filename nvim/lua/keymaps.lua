@@ -35,8 +35,11 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Telescope
-keymap("n", "Tb", ":Telescope buffers<CR>", opts)
-keymap("n", "TT", ":Telescope<CR>", opts)
+-- keymap("n", "Tb", ":Telescope buffers<CR>", opts)
+-- keymap("n", "TT", ":Telescope<CR>", opts)
+keymap('n', '<leader>ff', ":Telescope find_files<CR>", opts)
+keymap('n', '<leader>lg', ":Telescope live_grep<CR>", opts)
+keymap('n', '<leader>fb', ":Telescope buffers<CR>", opts)
 
 -- Format
 autocommand({"BufWritePost"}, {command = ":FormatWrite"})
