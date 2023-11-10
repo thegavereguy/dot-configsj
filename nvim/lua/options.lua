@@ -27,6 +27,8 @@ Options.foldcolumn = 'auto' -- imposta la colonna per visualizzare le ripiegatur
 Options.foldmethod = "expr"
 Options.foldexpr = "nvim_treesitter#foldexpr()"
 
+if global.neovide then global.neovide_scale_factor = 0.8 end
+
 -- Formatters options
 -- Rust
 global.formatdef_rustfmt = '"rustfmt"'
@@ -34,3 +36,7 @@ global.formatters_rust = {'rustfmt'}
 global.rust_raccomended_style = 0;
 
 -- JS
+--
+-- floaterm
+global.floaterm_borderchars = "─│─│╭╮╯╰"
+global.floaterm_keymap_kill = 'q'

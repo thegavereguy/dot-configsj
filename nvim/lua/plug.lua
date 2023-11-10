@@ -95,7 +95,8 @@ Plug 'jakewvincent/texmagic.nvim'
 Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/toggleterm.nvim'
 
-Plug 'simrat39/rust-tools.nvim'
+-- Plug 'simrat39/rust-tools.nvim'
+Plug 'thegavereguy/rust-tools.nvim'
 
 -- Arduino
 Plug 'stevearc/vim-arduino'
