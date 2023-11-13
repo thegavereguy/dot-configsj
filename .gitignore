@@ -178,3 +178,23 @@ mimeapps.list
 pavucontrol.ini
 
 QtProject.conf
+
+*.log
+
+lazygit/state.yml
+
+MongoDB Compass/
+
+btop/
+
+Notion/
+
+com.yuezk.qt/
+
+notion-nativefier-46aee8/
+
+trashrc
+
+partitionmanagerrc
+
+kathara.conf
