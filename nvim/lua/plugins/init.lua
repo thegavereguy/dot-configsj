@@ -14,6 +14,7 @@ require("plugins.telescope")
 require("nvim-treesitter.configs").setup {
     auto_install = true,
     ignore_install = {},
+    sync_install = false,
     modules = {},
     ensure_installed = {
         "lua", "vim", "go", "toml", "css", "tsx", "css", "html", "lua"

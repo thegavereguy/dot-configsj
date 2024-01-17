@@ -25,3 +25,5 @@ keymap("n", "<F6>", ":lua require('dap').continue()<CR>", opts)
 keymap("n", "<F11>", ":lua require('dap').step_over()<CR>", opts)
 keymap("n", "<F10>", ":lua require('dap').step_into()<CR>", opts)
 
+keymap("n", "K", ":RustHoverActions<CR>", opts)
+
