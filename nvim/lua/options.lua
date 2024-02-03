@@ -26,6 +26,7 @@ Options.foldcolumn = 'auto' -- imposta la colonna per visualizzare le ripiegatur
 
 Options.foldmethod = "expr"
 Options.foldexpr = "nvim_treesitter#foldexpr()"
+Options.foldenable = false
 
 if global.neovide then global.neovide_scale_factor = 0.8 end
 
@@ -61,3 +62,6 @@ local autoCommands = {
 }
 
 M.nvim_create_augroups(autoCommands)
+
+-- lsp diagnostics
+-- vim.diagnostic.config({virtual_lines = {only_current_line = true}})

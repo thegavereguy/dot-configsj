@@ -36,10 +36,11 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug('j-hui/fidget.nvim', {tag = "legacy"}) -- lsp progress
 Plug 'glepnir/lspsaga.nvim'
+Plug 'folke/trouble.nvim'
 
 -- Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug('nvim-telescope/telescope.nvim', {tag = '0.1.0'})
+Plug('nvim-telescope/telescope.nvim', {tag = '0.1.x'})
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
