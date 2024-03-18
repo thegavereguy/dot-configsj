@@ -15,8 +15,8 @@ local keymap = vim.api.nvim_set_keymap
 
 -- Normal --
 keymap("n", "XX",
-       ":FloatermNew --autoclose=0 g++ -g % -o ./bin/%< && ./bin/%< <CR>", opts)
-keymap("n", "XE", ":FloatermNew --autoclose=1 g++ -g % -o ./bin/%<<CR>", opts)
+       ":FloatermNew --autoclose=0 gcc -g % -o ./bin/%< && ./bin/%< <CR>", opts)
+keymap("n", "XE", ":FloatermNew --autoclose=1 gcc -g % -o ./bin/%<<CR>", opts)
 keymap("n", "<F7>", ":lua require('dapui').toggle()<CR>", opts)
 
 keymap("n", "<F5>", ":lua require('dap').toggle_breakpoint()<CR>", opts)
