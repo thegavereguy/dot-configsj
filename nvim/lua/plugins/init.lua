@@ -10,7 +10,9 @@ require("plugins.formatter")
 -- require("plugins.hover")
 require("plugins.dressing")
 require("plugins.telescope")
+require("plugins.orgmode")
 
+require('orgmode').setup_ts_grammar()
 require("nvim-treesitter.configs").setup {
     auto_install = true,
     ignore_install = {},
