@@ -11,9 +11,6 @@ Plug 'onsails/lspkind.nvim'
 
 -- Temi
 
--- Plug 'morhetz/gruvbox'
--- Plug 'jacoborus/tender.vim'
--- Plug 'glepnir/oceanic-material'
 Plug 'lunarvim/horizon.nvim'
 Plug 'nyoom-engineering/oxocarbon.nvim'
 -- Plug ('sonph/onehalf', { rtp =  'vim' })
@@ -26,8 +23,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 -- format
 Plug 'lukas-reineke/indent-blankline.nvim'
--- Plug 'Chiel92/vim-autoformat'
--- Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'mhartington/formatter.nvim'
 
 -- LS
@@ -103,5 +98,8 @@ Plug 'thegavereguy/rust-tools.nvim'
 -- Arduino
 Plug 'stevearc/vim-arduino'
 Plug 'edKotinsky/Arduino.nvim'
+
+-- orgmode
+Plug 'nvim-orgmode/orgmode'
 
 vim.call('plug#end')
