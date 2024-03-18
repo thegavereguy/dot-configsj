@@ -1,5 +1,5 @@
-require('plug')		-- installazione plugin
-require('options')			-- carica le impostazione, ricerca automatica nella cartella /lua
+require('plug') -- installazione plugin
+require('options') -- carica le impostazione, ricerca automatica nella cartella /lua
 require('lsp')
 require('completion')
 require('keymaps')

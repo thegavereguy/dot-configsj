@@ -21,6 +21,7 @@ require("formatter").setup {
         typescriptreact = {
             require("formatter.filetypes.typescriptreact").prettierd
         },
+        typescript = {require("formatter.filetypes.typescript").prettierd},
         javascript = {require("formatter.filetypes.javascript").prettierd},
         css = {require("formatter.filetypes.css").prettierd},
         lua = {require("formatter.filetypes.lua").luaformat},

@@ -11,9 +11,6 @@ Plug 'onsails/lspkind.nvim'
 
 -- Temi
 
--- Plug 'morhetz/gruvbox'
--- Plug 'jacoborus/tender.vim'
--- Plug 'glepnir/oceanic-material'
 Plug 'lunarvim/horizon.nvim'
 Plug 'nyoom-engineering/oxocarbon.nvim'
 -- Plug ('sonph/onehalf', { rtp =  'vim' })
@@ -26,8 +23,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 -- format
 Plug 'lukas-reineke/indent-blankline.nvim'
--- Plug 'Chiel92/vim-autoformat'
--- Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'mhartington/formatter.nvim'
 
 -- LS
@@ -36,10 +31,11 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug('j-hui/fidget.nvim', {tag = "legacy"}) -- lsp progress
 Plug 'glepnir/lspsaga.nvim'
+Plug 'folke/trouble.nvim'
 
 -- Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug('nvim-telescope/telescope.nvim', {tag = '0.1.0'})
+Plug('nvim-telescope/telescope.nvim', {tag = '0.1.x'})
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
@@ -67,6 +63,7 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-omni'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'folke/neodev.nvim'
 Plug 'saecki/crates.nvim'
@@ -101,5 +98,8 @@ Plug 'thegavereguy/rust-tools.nvim'
 -- Arduino
 Plug 'stevearc/vim-arduino'
 Plug 'edKotinsky/Arduino.nvim'
+
+-- orgmode
+Plug 'nvim-orgmode/orgmode'
 
 vim.call('plug#end')
