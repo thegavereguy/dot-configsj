@@ -10,6 +10,8 @@ local cmp = require('cmp')
 local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 
+lspkind.init({symbol_map = {Copilot = ""}})
+
 if cmp ~= nil then
     cmp.setup({
         snippet = {
@@ -53,8 +55,9 @@ if cmp ~= nil then
         },
 
         sources = cmp.config.sources({
-            {name = 'nvim_lsp'}, {name = 'nvim_lsp_signature_help'},
-            {name = 'orgmode'}, {name = 'luasnip'}, -- For luasnip users.
+            {name = 'nvim_lsp'}, {name = 'copilot'},
+            {name = 'nvim_lsp_signature_help'}, {name = 'orgmode'},
+            {name = 'luasnip'}, -- For luasnip users.
             {name = "crates"}
             -- { name = 'omni' }			-- may cause of unwanted completion
         }),
@@ -64,6 +67,7 @@ if cmp ~= nil then
                 mode = "symbol_text",
                 menu = {
                     omni = "[OMNI]",
+                    copilot = "[COPILOT]",
                     nvim_lsp = "[LSP]",
                     luasnip = "[LUASNIP]",
                     crates = "[CRATE]"
