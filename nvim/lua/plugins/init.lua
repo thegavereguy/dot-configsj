@@ -14,7 +14,7 @@ require("plugins.orgmode")
 require("plugins.copilot")
 require("plugins.comment")
 
-require('orgmode').setup_ts_grammar()
+-- require('orgmode').setup_ts_grammar()
 require("nvim-treesitter.configs").setup {
     auto_install = true,
     ignore_install = {},
