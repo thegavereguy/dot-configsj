@@ -110,4 +110,6 @@ Plug 'numToStr/Comment.nvim'
 
 Plug 'nvim-neotest/nvim-nio'
 
+Plug 'stevearc/overseer.nvim'
+
 vim.call('plug#end')
