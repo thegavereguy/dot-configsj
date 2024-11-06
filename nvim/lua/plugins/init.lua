@@ -15,6 +15,7 @@ require("plugins.copilot")
 require("plugins.comment")
 require("plugins.cmake")
 require("plugins.overseer")
+require("plugins.nvimtree")
 
 -- require('orgmode').setup_ts_grammar()
 require("nvim-treesitter.configs").setup {
