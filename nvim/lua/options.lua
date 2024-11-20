@@ -63,5 +63,8 @@ local autoCommands = {
 
 M.nvim_create_augroups(autoCommands)
 
+-- Da problemi con cmaketools, notifica persistente dopo esecuzione
+-- vim.notify = require("notify")
+
 -- lsp diagnostics
 -- vim.diagnostic.config({virtual_lines = {only_current_line = true}})

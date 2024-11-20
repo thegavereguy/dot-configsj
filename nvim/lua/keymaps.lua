@@ -60,7 +60,10 @@ keymap("n", "tp", ":tabprevious<CR>", opts)
 keymap("n", "tc", ":tabclose<CR>", opts)
 
 -- NerdTREE
-keymap("n", "<C-N>", ":NERDTreeToggleVCS<CR>", opts)
+-- keymap("n", "<C-N>", ":NERDTreeToggleVCS<CR>", opts)
+
+-- NvimTree
+keymap("n", "<C-N>", ":NvimTreeToggle<CR>", opts)
 
 -- LspSaga
 keymap("n", "rn", ":Lspsaga rename<CR>", opts)
@@ -77,3 +80,8 @@ keymap("n", "K", ":Lspsaga hover_doc<CR>", opts)
 keymap("n", "<leader>o", ":Lspsaga outline<CR>", opts)
 -- keymap("n", "<A-t>", ":Lspsaga term_toggle<CR>", opts)
 keymap("n", "<A-t>", ":FloatermToggle<CR>", opts)
+
+-- CMakeTools
+keymap("n", "<leader>cmr", ":CMakeRun<CR>", opts)
+keymap("n", "<leader>cmb", ":CMakeBuild<CR>", opts)
+keymap("n", "<leader>cmt", ":CMakeRunTest<CR>", opts)

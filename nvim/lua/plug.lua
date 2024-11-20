@@ -3,6 +3,7 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
 Plug 'scrooloose/nerdtree' -- Albero file laterale
+Plug 'nvim-tree/nvim-tree.lua' -- Albero file laterale 2
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight' -- SH per Nertree
 Plug 'ryanoasis/vim-devicons' -- Icone per Nerdtree
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -55,7 +56,6 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'mfussenegger/nvim-lint'
 
 Plug 'Civitasv/cmake-tools.nvim'
-
 -- completion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -101,5 +101,18 @@ Plug 'edKotinsky/Arduino.nvim'
 
 -- orgmode
 Plug 'nvim-orgmode/orgmode'
+
+-- copilot
+Plug 'zbirenbaum/copilot.lua'
+Plug 'zbirenbaum/copilot-cmp'
+
+-- Comment
+Plug 'numToStr/Comment.nvim'
+
+Plug 'nvim-neotest/nvim-nio'
+
+Plug 'stevearc/overseer.nvim'
+
+Plug 'rcarriga/nvim-notify'
 
 vim.call('plug#end')

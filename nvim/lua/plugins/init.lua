@@ -11,8 +11,13 @@ require("plugins.formatter")
 require("plugins.dressing")
 require("plugins.telescope")
 require("plugins.orgmode")
+require("plugins.copilot")
+require("plugins.comment")
+require("plugins.cmake")
+require("plugins.overseer")
+require("plugins.nvimtree")
 
-require('orgmode').setup_ts_grammar()
+-- require('orgmode').setup_ts_grammar()
 require("nvim-treesitter.configs").setup {
     auto_install = true,
     ignore_install = {},
@@ -51,4 +56,3 @@ require("rust-tools").setup({
     tools = {executor = require("rust-tools.executors").floaterm}
 });
 require("toggleterm").setup();
-
